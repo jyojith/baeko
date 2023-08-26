@@ -1,0 +1,21 @@
+TransactionID,UserID,SKU,ProductName,Quantity,TransactionDate,Price,Discount,PaymentMethod,Location,City
+10000,User1,SKU101,Croissant,2,2023-01-01,1.5,0.1,Card,Bakery A,Berlin
+10001,User1,SKU104,Roggenmischbrot,1,2023-01-02,3.0,0.2,Card,Bakery A,Berlin
+10002,User1,SKU107,Baguette,3,2023-01-02,3.5,0.1,Card,Bakery A,Berlin
+10003,User2,SKU102,Chocolate Cake,1,2023-01-03,5.0,0.3,App,Bakery B,Munich
+10004,User2,SKU105,Weißbrot,2,2023-01-03,2.0,0.0,App,Bakery B,Munich
+10005,User3,SKU103,Blueberry Muffin,2,2023-01-04,2.5,0.1,Cash,Bakery C,Frankfurt
+10006,User3,SKU106,Dinkelbrötchen,1,2023-01-04,1.0,0.0,Cash,Bakery C,Frankfurt
+10007,User3,SKU101,Croissant,1,2023-01-05,1.5,0.0,Card,Bakery C,Frankfurt
+10008,User4,SKU104,Roggenmischbrot,2,2023-01-05,3.0,0.1,Cash,Bakery D,Hamburg
+10009,User4,SKU108,Brezel,3,2023-01-06,1.0,0.0,Cash,Bakery D,Hamburg
+10010,User5,SKU102,Chocolate Cake,1,2023-01-06,5.0,0.2,Card,Bakery E,Berlin
+10011,User5,SKU106,Dinkelbrötchen,1,2023-01-07,1.5,0.1,Card,Bakery E,Berlin
+10012,User6,SKU105,Weißbrot,1,2023-01-07,2.0,0.0,App,Bakery F,Munich
+10013,User6,SKU107,Baguette,1,2023-01-08,3.5,0.0,App,Bakery F,Munich
+10014,User7,SKU103,Blueberry Muffin,3,2023-01-08,2.5,0.1,Cash,Bakery G,Frankfurt
+10015,User7,SKU108,Brezel,2,2023-01-09,1.0,0.0,Cash,Bakery G,Frankfurt
+10016,User8,SKU102,Chocolate Cake,2,2023-01-09,5.0,0.3,Card,Bakery H,Hamburg
+10017,User8,SKU104,Roggenmischbrot,3,2023-01-10,3.0,0.2,Card,Bakery H,Hamburg
+10018,User8,SKU106,Dinkelbrötchen,2,2023-01-10,1.5,0.1,Card,Bakery H,Hamburg
+10019,User9,SKU101,Croissant,1,2023-01-11,1.5,0.1,Cash,Bakery I,Berlin
