@@ -37,7 +37,7 @@ def get_user_recommendations(user_id, num_recommendations=5):
     return recommended_products
 
 # Example usage
-user_id = "User8"  # Replace with the desired UserID
+user_id = "User6"  # Replace with the desired UserID
 recommended_product_indices = get_user_recommendations(user_id)
 recommended_products = [list(sku_to_index.keys())[idx] for idx in recommended_product_indices]
 print(f"Recommended products for {user_id}: {recommended_products}")

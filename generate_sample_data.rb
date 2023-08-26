@@ -3,9 +3,8 @@ require 'faker'
 
 # Initialize Faker for generating random data
 Faker::UniqueGenerator.clear
-faker = Faker::Name
 
-# Define bakery items with SKUs and prices
+# Define bakery items with SKUs, names, and prices
 bakery_items = [
   { sku: "SKU101", name: "Croissant", price: 2.5 },
   { sku: "SKU102", name: "Chocolate Cake", price: 15.0 },
@@ -15,7 +14,19 @@ bakery_items = [
   { sku: "SKU106", name: "Dinkelbrötchen", price: 1.5 },
   { sku: "SKU107", name: "Baguette", price: 3.5 },
   { sku: "SKU108", name: "Brezel", price: 1.0 },
-  # Add more items with SKUs and prices...
+  { sku: "SKU109", name: "Apple Strudel", price: 4.5 },
+  { sku: "SKU110", name: "Cinnamon Roll", price: 2.2 },
+  { sku: "SKU111", name: "Sourdough Bread", price: 3.8 },
+  { sku: "SKU112", name: "Cherry Danish", price: 3.0 },
+  { sku: "SKU113", name: "Eclair", price: 2.8 },
+  { sku: "SKU114", name: "Pretzel", price: 1.2 },
+  { sku: "SKU115", name: "Bagel", price: 1.8 },
+  { sku: "SKU116", name: "Fruit Tart", price: 4.2 },
+  { sku: "SKU117", name: "Almond Croissant", price: 3.3 },
+  { sku: "SKU118", name: "Pumpernickel Bread", price: 2.7 },
+  { sku: "SKU119", name: "Strawberry Shortcake", price: 5.5 },
+  { sku: "SKU120", name: "Pain au Chocolat", price: 2.7 },
+  # Add more items with SKUs, names, and prices...
 ]
 
 # Define main cities with associated bakeries and users
@@ -45,8 +56,7 @@ main_cities = [
 
 # Generate synthetic data
 num_days = 365
-transactions_per_day = 60
-start_date = DateTime.new(2022, 1, 1)  # Define your start date
+transactions_per_day = (10..30)  # Vary transactions per day
 
 CSV.open("bakery_pos_data.csv", "w", write_headers: true, headers: [
   "TransactionID", "UserID", "SKU", "ProductName",
@@ -57,8 +67,10 @@ CSV.open("bakery_pos_data.csv", "w", write_headers: true, headers: [
   transaction_id = 10000
 
   num_days.times do |day|
-    current_date = start_date + day
-    transactions_per_day.times do
+    current_date = DateTime.new(2022, 1, 1) + day
+    daily_transactions = rand(transactions_per_day)
+
+    daily_transactions.times do
       transaction_date = current_date + rand(24 * 60) * 60  # Random time within the day
       city = main_cities.sample
       user = city[:users].sample
